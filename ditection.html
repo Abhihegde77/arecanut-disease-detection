@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Detection - Arecanut Plant Disease Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ditection.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpeg" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="result.html">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="detection-container">
+        <section class="upload-section">
+            <h2>Upload Image</h2>
+            <div id="drop-zone">
+                <p>Drag & Drop your image here</p>
+                <input type="file" id="file-input" accept="image/*">
+                <label for="file-input" class="btn">Select File</label>
+            </div>
+            <img id="preview-image" src="" alt="Preview" style="display: none;">
+            <div class="button-group">
+                <button id="upload-btn" class="btn">Upload Image</button>
+                <button id="check-btn" class="btn">Check for Disease</button>
+            </div>
+        </section>
+
+        <section class="result-section">
+            <h2>Detection Result</h2>
+            <div id="result-container">
+                <p>The detection results will appear here after processing your image.</p>
+            </div>
+        </section>
+
+        <section class="info-section">
+           <div> <div class="image-placeholder">
+                <img src="3.jpeg" alt="Arecanut Disease" style="float: right; 
+                    margin: auto">
+            <h2>Why Do Arecanut Diseases Happen?</h2>
+            <p>Arecanut diseases can occur due to various factors, including:</p>
+            <ul>
+                <li>Environmental stress (e.g., excessive rainfall, drought)</li>
+                <li>Nutrient deficiencies</li>
+                <li>Pathogenic infections (fungi, bacteria, viruses)</li>
+                <li>Poor agricultural practices</li>
+            </ul>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>About Arecanut</h2>
+            <p>Arecanut, also known as betel nut, is the seed of the areca palm (Areca catechu). It's widely cultivated in tropical regions of South Asia and parts of the Pacific. The nut has cultural and economic significance in many communities.</p>
+            <h3>Medicinal Properties of Arecanut</h3>
+            <p>While excessive consumption can be harmful, arecanut has been traditionally used in some cultures for its potential medicinal properties:</p>
+            <ul>
+                <li>Digestive aid: It may help stimulate saliva production and aid digestion.</li>
+                <li>Parasitic treatment: Some traditional medicines use arecanut to treat intestinal parasites.</li>
+                <li>Dental health: It's believed to have some antibacterial properties that may benefit oral health.</li>
+                <li>Stimulant: Arecanut contains alkaloids that can have a mild stimulant effect.</li>
+            </ul>
+            <p><strong>Note:</strong> It's important to consult with a healthcare professional before using arecanut for medicinal purposes, as it can have adverse effects and is considered carcinogenic when used in excess.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>We are dedicated to helping arecanut farmers identify and manage plant diseases effectively.</p>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="#" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:info@arecanutspecialist.com">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Arecanut Plant Disease Detection Specialist. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="detection.js"></script>
+</body>
+</html>

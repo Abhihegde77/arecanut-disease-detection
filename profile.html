@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Arecanut Plant Disease Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpeg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ditection.html">Detection</a></li>
+                <li><a href="result.html">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <section class="profile-header">
+            <div class="profile-picture-container">
+                <img id="profile-picture" src="/placeholder.svg?height=200&width=200" alt="Profile Picture">
+                <input type="file" id="profile-picture-input" accept="image/*">
+                <label for="profile-picture-input" class="btn">Change Picture</label>
+            </div>
+            <h1 id="user-name">Shreya 🙌</h1>
+        </section>
+
+        <section class="user-info">
+            <h2>User Information</h2>
+            <form id="user-info-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="johndoe@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" value="+1234567890">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" value="New York, USA">
+                </div>
+                <button type="submit" class="btn">Save Changes</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>We are dedicated to helping arecanut farmers identify and manage plant diseases effectively.</p>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="#" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:info@arecanutspecialist.com">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Arecanut Plant Disease Detection Specialist. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

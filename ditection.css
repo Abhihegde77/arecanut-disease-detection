@@ -1,0 +1,120 @@
+.detection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.upload-section, .result-section {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+}
+
+.info-section, .about-section {
+    flex-basis: 100%;
+}
+
+#drop-zone {
+    border: 3px dashed var(--primary-color);
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: rgba(76, 175, 80, 0.1);
+    transition: all 0.3s ease;
+}
+
+#drop-zone:hover {
+    background-color: rgba(76, 175, 80, 0.2);
+}
+
+#file-input {
+    display: none;
+}
+
+#preview-image {
+    max-width: 100%;
+    max-height: 400px;
+    margin: 1rem auto;
+    display: block;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.result-section, .info-section, .about-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+#result-container {
+    min-height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.image-placeholder {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .upload-section, .result-section {
+        flex-basis: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+    .detection-container {
+        padding: 1rem;
+    }
+
+    #drop-zone {
+        padding: 2rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+}
+.wrap{
+
+    display: flex;
+}
